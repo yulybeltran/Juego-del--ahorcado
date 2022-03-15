@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Squada+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <div id="enunciado">
+            <h1>AHORCADO!</h1>
+            <p>Bienvenido, vamos a jugar AHORCADO! <br>
+                Para esto tendrás que completar los espacios de las casillas <br>
+                Si te equivocas, el dibujo se completará y estarás AHORCADO</p>
+            <p> INTRODUZCA UNA LETRA, POR FAVOR</p>
+            <input type="text" maxlength="1" id="letra"> <br><button class="cybr-btn" id="verificar">
+                Verificar<span aria-hidden>_</span>
+                <span aria-hidden class="cybr-btn__glitch">Verificar</span>
+              </button>
+            <p id="output"></p>
+        </div>
+        <div id="ahorcado"></div>
+        <div id="ganaste">
+            <img class="img_ganaste" src="css/img/ganaste.png" alt="">
+            <h1 class="txt_win">
+                YOU <br />
+                WIN
+            </h1>
+            <h2 class="txt_congratulations">CONGRATULATIONS!</h2>
+            <button class="cybr-btn" id="volver">
+                Jugar<span aria-hidden>_</span>
+                <span aria-hidden class="cybr-btn__glitch">Jugar</span>
+              </button>
+        </div>
+        <div id="perdiste">
+            <img class="img_perdiste" src="css/img/perdiste.png" alt="">
+            <h1 class="txt_over"> GAME <br>
+                OVER
+            </h1>
+            <h2 class="txt_loser">L O S E R !</h2>
+            <button class="cybr-btn" id="volver2">
+               Jugar<span aria-hidden>_</span>
+                <span aria-hidden class="cybr-btn__glitch">Jugar</span>
+              </button>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</html>
